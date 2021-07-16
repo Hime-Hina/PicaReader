@@ -1,0 +1,162 @@
+﻿MainWindow {
+}
+
+Sidebar {
+  background-color: white;
+}
+
+SidebarButton {
+  background-color: white/*rgb(192, 192, 192)*/;
+  border: 3px solid gray;
+  border-radius: 80%;
+  padding-top: 10px;
+}
+
+SidebarButton:!checked:hover {
+  background-color: #eeeeee;
+}
+
+SidebarButton:checked {
+  border: 5px solid #F34D3F;
+  padding-left: 3px;
+  padding-top: 13px;
+}
+
+SidebarButton:pressed {
+  background-color: #dddddd;
+  padding-left: 3px;
+  padding-top: 13px;
+}
+
+CategoryBar CategoryButton {
+  border: 5px solid #D8E3EC;
+  background-color: #D8E3EC;
+  border-radius: 20px;
+  color: white;
+  font-size: 50px;
+}
+CategoryBar CategoryButton:checked {
+  border: 5px solid #8CDBFF;
+  background-color: #8CDBFF;
+  border-radius: 20px;
+}
+
+PicBookCoverBox PaginationButton {
+  background-color: #D5EBC1;
+  border: 2px solid #D5EBC1;
+  border-radius: 20px;
+  color: white;
+}
+PicBookCoverBox PaginationButton:checked {
+  background-color: #89C157;
+  border: 2px solid #89C157;
+  border-top: 5px solid #89C157;
+  font-size: 30px;
+}
+
+IndexPage QToolButton:pressed {
+  padding-left: 3px;
+  padding-top: 3px;
+}
+
+IndexPage QToolButton#continue_btn {
+  background-color: #D2F2B2;
+  border: 2px solid #D2F2B2;
+  border-radius: 20px;
+  color: #576B95;
+}
+
+IndexPage QToolButton#score_btn {
+  background-color: #D9C2F0;
+  border: 2px solid #D9C2F0;
+  border-radius: 20px;
+  color: #785CFF;
+}
+
+IndexPage QToolButton#settings_btn {
+  background-color: #D2F1FF;
+  border: 2px solid #D2F1FF;
+  border-radius: 20px;
+}
+
+IndexPage QToolButton#settings_page_return_btn {
+  background-color: #D2F1FF;
+  border: 2px solid #D2F1FF;
+  border-radius: 20px;
+}
+IndexPage QToolButton#score_page_return_btn {
+  background-color: #D2F1FF;
+  border: 2px solid #D2F1FF;
+  border-radius: 20px;
+}
+
+IndexPage QWidget#owner_info {
+  background-color: #E3F9F1;
+  border: 2px solid #E3F9F1;
+  border-radius: 20px;
+}
+IndexPage QWidget#owner_info QLabel {
+  color: #68CEFF;
+}
+
+IndexPage QWidget#recent_books {
+  background-color: #E3F9F1;
+  border: 2px solid #E3F9F1;
+  border-radius: 20px;
+}
+
+IndexPage QWidget#main_settings {
+  background-color: #75C8FB;
+  border: 2px solid #75C8FB;
+  border-radius: 20px;
+}
+IndexPage QWidget#main_settings QLabel {
+  color: white;
+}
+IndexPage QWidget#main_settings QFrame#line {
+  background-color: #95D5FB;
+  color: #95D5FB;
+}
+
+IndexPage QLabel#recent_books_label {
+  color: #69CEFF;
+}
+
+
+ReadingPage QToolButton {
+  border: 2px solid black;
+  border-radius: 40px;
+}
+ReadingPage QToolButton:checked {
+  border: 2px solid green;
+}
+
+
+ReadingCompletePage QWidget#right_widget {
+  border: 2px solid #FEFFFF;
+  background-color: #FEFFFF;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+
+ReadingCompletePage QToolButton#return_btn {
+  background-color: #D2F1FF;
+  border: 2px solid #D2F1FF;
+  border-radius: 20px;
+}
+ReadingCompletePage QToolButton#nxt_book_btn {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 40px;
+  color: #66B9FC;
+}
+ReadingCompletePage QToolButton#favorite_btn {
+  background-color: #CEF5E7;
+  border: 2px solid #CEF5E7;
+  border-radius: 20px;
+}
+ReadingCompletePage QToolButton#rewatch_btn {
+  background-color: #CEF5E7;
+  border: 2px solid #CEF5E7;
+  border-radius: 20px;
+}

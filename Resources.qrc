@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="index">img/index.png</file>
+        <file alias="music">img/music.png</file>
+        <file alias="guoxue">img/guoxue.png</file>
+        <file alias="favorite">img/favorite.png</file>
+        <file alias="story">img/story.png</file>
+        <file alias="good">img/good.png</file>
+        <file alias="opening">img/opening.png</file>
+        <file alias="continue">img/continue.png</file>
+        <file alias="score">img/score.png</file>
+        <file alias="settings">img/settings.png</file>
+        <file alias="return">img/return.png</file>
+        <file alias="score_bg">img/score_bg.png</file>
+        <file alias="tree">img/tree.png</file>
+        <file alias="apple">img/apple.png</file>
+        <file alias="lock">img/lock.png</file>
+        <file alias="nxt">img/nxt.png</file>
+        <file alias="play">img/play.png</file>
+        <file alias="prev">img/prev.png</file>
+        <file alias="return1">img/return1.png</file>
+        <file alias="stop">img/stop.png</file>
+        <file alias="add_to_favorites">img/add_to_favorites.png</file>
+        <file alias="added_to_favorites">img/added_to_favorites.png</file>
+        <file alias="rewatch">img/rewatch.png</file>
+        <file alias="nxt1">img/nxt1.png</file>
+        <file alias="index_bg">img/index_bg.png</file>
+    </qresource>
+    <qresource prefix="/css">
+        <file alias="styl">styl.css</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>960</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>38</red>
+        <green>39</green>
+        <blue>40</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>239</red>
+        <green>246</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>38</red>
+        <green>39</green>
+        <blue>40</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>239</red>
+        <green>246</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>239</red>
+        <green>246</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>239</red>
+        <green>246</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="shouldBeLockedAuto" stdset="0">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="main_window_layout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="main_pages">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="main_page">
+      <layout class="QHBoxLayout" name="main_page_layout" stretch="0,1">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="Sidebar" name="sidebar" native="true"/>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="right_pages">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="IndexPage" name="index_page"/>
+         <widget class="StoryPage" name="story_page">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+         <widget class="FavoritePage" name="favorite_page"/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="ReadingPage" name="reading_page"/>
+     <widget class="ReadingCompletePage" name="ending_page"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FavoritePage</class>
+   <extends>QWidget</extends>
+   <header>FavoritePage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StoryPage</class>
+   <extends>QWidget</extends>
+   <header>StoryPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReadingPage</class>
+   <extends>QWidget</extends>
+   <header>ReadingPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReadingCompletePage</class>
+   <extends>QWidget</extends>
+   <header>ReadingCompletePage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>IndexPage</class>
+   <extends>QWidget</extends>
+   <header>IndexPage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Sidebar</class>
+   <extends>QWidget</extends>
+   <header>Sidebar.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
